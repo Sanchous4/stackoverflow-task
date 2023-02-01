@@ -25,7 +25,7 @@ const QuestionDetails = () => {
 
     return (
         <MainContent>
-            {!hasDetails && loading && <Loader />}
+            {loading && <Loader />}
             {hasDetails && !loading && <Answers details={detailsById} />}
         </MainContent>
     );
